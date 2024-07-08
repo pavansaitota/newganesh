@@ -1,0 +1,119 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    z-index: 10;
+}
+
+header .logo {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    image-resolution: 10px;
+    align-items: start;
+    image-orientation:from-image;
+    position: static;
+    padding: 20px 20px;
+    border-radius: 20%;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    color: #ffae00;
+    margin: 5px 20px;
+    font-size: 25px;
+    padding: 20px 20px;
+}
+
+header nav ul li a {
+    border-bottom: 2px solid rgb(235, 141, 18);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: blue;
+}
+body {
+  background-color: rgb(53, 18, 53);
+}
+.container {
+  background-color: white;
+  border: 2x solid red;
+  display: block;
+  height: 500px;
+  width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 25px;
+  align-items: center;
+}
+.box {
+ background-color: blue;
+ height: 280px;
+ width: 280px;
+ border-radius: 25px;
+ margin-left: 10px;
+ margin-top: 10px;
+}
+.code {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.me{
+  display: flex;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+}
+/*footer*/
+.footer {
+    background-color:orange;
+    border-top: 2px solid black;
+}
+
+.footer .footer-box {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer-box .social-media a {
+    color: white;
+    background-color: #b29e5c;
+    border-radius: 50%;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.footer .footer-box .social-media a:hover {
+    opacity: .7;
+    transition: .5s all ease-in-out;
+}
+
+.footer .footer-box .copyright {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .footer-box .brand {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .footer-box .brand span {
+    color: rgb(33, 36, 34);
+}

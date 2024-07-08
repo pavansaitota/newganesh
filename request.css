@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    z-index: 1;
+}
+
+header .logo {
+    display: flex;
+    width: 10%;
+    height: 10%;
+    image-resolution: 10px;
+    align-items: start;
+    image-orientation:from-image;
+    position: static;
+    padding: 20px 20px;
+    border-radius: 20%;
+}
+
+header nav ul li a {
+    color: #151a9b;
+    margin: 5px 20px;
+    font-size: 25px;
+    padding: 20px 20px;
+}
+
+header nav ul li a {
+    border-bottom: 2px solid rgb(235, 141, 18);
+}
+/*request*/
+.Request {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    border-top: 2px solid rgb(3, 5, 8);
+}
+
+.Request .Request-box {
+    flex: 3;
+}
+.Request .Request-box,
+.Request .Request-box .Request-body {
+    height: 100%;
+}
+
+.Request-body {
+    background-color: rgb(243, 187, 1);
+    height: 100%;
+    border-left: 2px orange;
+}
+
+.Request-body form {
+    color: rgb(255, 153, 0);
+    padding: 50px 50px;
+    box-sizing: border-box;
+}
+
+.Request-body h2 {
+    text-align:left;
+    font-size: 20px;
+    color: rgb(220, 26, 26);
+}
+
+form .form-Request {
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #000000;
+}
+
+form .form-Request input {
+    width: 100%;
+    height: 40px;
+    padding: 0 5px;
+    font-size: 17px;
+    border: black;
+    background: oldlace;
+    outline: white;
+    color: rgb(7, 4, 4);
+}
+
+form .form-Request label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgb(0, 0, 0);
+    transform: translateY(-50%);
+    font-size: 17px;
+    transition: .6s;
+    pointer-events: none;
+}
+
+form .form-Request span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: rgb(141, 97, 41);
+    transform: .4s;
+}
+
+form .form-Request input:focus~label,
+form .form-Request input:valid~label {
+    top: -10px;
+    color: rgb(0, 0, 0);
+}
+
+form .form-Request input:focus~span::before,
+form .form-Request input:valid~span::before {
+    width: 100%;
+}
+
+.Request-body form button {
+    padding: 20px 20px;
+    font-size: 17px;
+    border: none;
+    background-color: #0066ff;
+    color: rgb(231, 231, 231);
+    border: 10px;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+
+.Request-body form button:hover {
+    background-color: #0066ff;
+}
+
+.footer {
+    background-color:orange;
+    border-top: 2px solid black;
+}
+
+.footer .footer-box {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer-box .social-media a {
+    color: white;
+    background-color: #b29e5c;
+    border-radius: 50%;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.footer .footer-box .social-media a:hover {
+    opacity: .7;
+    transition: .5s all ease-in-out;
+}
+
+.footer .footer-box .copyright {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .footer-box .brand {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .footer-box .brand span {
+    color: rgb(33, 36, 34);
+}
